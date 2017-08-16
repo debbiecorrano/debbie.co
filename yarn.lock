@@ -666,9 +666,9 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
-bulma@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.4.3.tgz#060da634b579ed99d7cedf0251d9e21e1f5c770d"
+bulma@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.5.1.tgz#db2831c94afe732250c7b12527a7b792a4dc9ef8"
 
 camelcase@^1.0.2:
   version "1.2.1"
@@ -1325,10 +1325,6 @@ jodid25519@^1.0.0:
   resolved "https://registry.yarnpkg.com/jodid25519/-/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
   dependencies:
     jsbn "~0.1.0"
-
-jquery@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
 js-tokens@^3.0.0:
   version "3.0.1"

@@ -2,3 +2,38 @@
 
 svg
   max-width: 100%
+
+.section.is-intro
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+
+  .media
+    .image
+      max-width: 80px
+      margin-top: 6px
+      margin-left: -40px
+
+    .content
+      max-width: 320px
+      color: #333
+
+    .title
+      font-size: 1.75rem
+      line-height: 1.2
+
+    .level-item
+      color: #999
+      text-transform: uppercase
+      letter-spacing: 0.08rem
+      font-size: 0.75rem
+
+      + .level-item
+        &:before
+          content: '|'
+          margin-right: 1rem
+          color: #999
+
+      +attention
+        color: $aquamarine

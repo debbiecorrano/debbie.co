@@ -1,3 +1,14 @@
-section.section
-  .container
-    h1.title Hi, I'm Debbie.
+section.section.is-intro
+  .media
+    figure.media-left
+      .image
+        img src=image_path("debbie.png")
+    .media-content
+      .content
+        h1.title Hi, I'm Debbie <br>and I turn ideas into stories and strategies.
+      nav.level.is-mobile
+        .level-left
+          a.level-item target="_blank" href="https://instagram.com/#{data.config.instagram.user}" Instagram
+          a.level-item target="_blank" href="https://facebook.com/#{data.config.facebook.user}" Facebook
+          a.level-item target="_blank" href="https://twitter.com/#{data.config.twitter.handle}" Twitter
+          a.level-item target="_blank" href="mailto:#{data.config.page.email}" Email
