@@ -10,13 +10,21 @@ svg
   min-height: 100vh
 
   .media
+    +mobile
+      flex-direction: column
+
     .image
       max-width: 80px
       margin-top: 6px
-      margin-left: -40px
+
+      +mobile
+        margin-bottom: 1rem
+
+      +tablet
+        margin-left: -40px
 
     .content
-      max-width: 320px
+      max-width: 300px
       color: #333
 
     .title
