@@ -1,0 +1,13 @@
+---
+en_US:
+
+  # Meta tags
+  # –––––––––––––––––
+  meta:
+    default:
+      title:        Debbie Corrano
+      description:  Debbie Corrano
+      keywords:     travel, dogs
+
+    "404":
+      title:        404 – Page not found

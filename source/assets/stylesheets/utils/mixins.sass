@@ -1,0 +1,55 @@
+// Pseudo selectors
+
+=selection
+  ::selection
+    @content
+  ::-moz-selection
+    @content
+
+=placeholder
+  &::placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+
+=attention
+  &:hover,
+  &.is-hovered,
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active,
+  .is-touched
+    @content
+
+
+// Styling
+
+=truncate($width: initial)
+  display: block
+  max-width: $width
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+=button-reset
+  position: relative
+  display: inline-flex
+  appearance: none
+  background: none
+  border: none
+  font-size: $size-normal
+  justify-content: flex-start
+  color: inherit
+
+  +attention
+    outline: none
+
+=visually-hidden
+  font: 0/0 a
+  color: transparent
+  text-shadow: none
+  background-color: transparent
+  border: 0

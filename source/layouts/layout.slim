@@ -1,0 +1,44 @@
+doctype html
+html.no-js lang=I18n.locale
+  head
+    meta charset="utf-8"
+    title=meta_tag_title
+
+    meta name="description" content=meta_tag_description
+    meta name="keywords"    content=meta_tag_keywords
+    
+    meta name="author"      content=data.config.page.author
+    meta name="publisher"   content=data.config.page.publisher
+    meta name="copyright"   content=data.config.page.copyright
+    
+    meta name="robots"      content=meta_tag_keywords
+    meta name="robots"      content="index, follow"
+    meta name="robots"      content="all"
+
+    / Mobile viewport
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    / Favicons
+    link rel="icon" type="image/png" href="#{image_path("favicons/favicon-32.png")}"
+
+    = partial "/shared/meta_microdata"
+    = partial "/shared/meta_facebook"
+    = partial "/shared/meta_twitter"
+
+    / Prefetch Google Analytics
+    link rel="dns-prefetch" href="//www.google-analytics.com"
+    
+    / Stylesheets
+    = stylesheet_link_tag :application
+
+  body class=page_classes
+
+    .app-container
+      = partial "/shared/header"
+      main.app-content= yield
+      = partial "/shared/footer"
+
+    = partial "/shared/analytics"
+    = partial "/shared/webfont_loader"
+
+    = javascript_include_tag "application.bundle"

@@ -1,0 +1,63 @@
+// Layout
+
+.columns
+  &.has-equal-heights
+    .column
+      display: flex
+
+      > *
+        flex-grow: 1
+
+.is-inline-block
+  display: inline-block
+
+.is-block
+  display: block
+
+.is-flex
+  display: flex
+
+.is-aligned-top
+  align-items: flex-start
+
+.is-aligned-center
+  align-items: center
+
+.is-aligned-bottom
+  align-items: flex-end
+
+.is-justified-top
+  justify-content: flex-start
+
+.is-justified-center
+  justify-content: center
+
+.is-justified-bottom
+  justify-content: flex-end
+
+
+// Spacing
+
+.no-padding
+  padding: 0 !important
+
+
+// Colors
+
+[class*="has-tint"].has-tint
+  color: $blue
+
+
+// Typography
+
+.is-uppercase
+  text-transform: uppercase
+
+.is-bold
+  font-weight: bold
+
+.is-nowrap
+  white-space: nowrap
+
+.is-visually-hidden
+  +visually-hidden
